@@ -78,14 +78,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                         cont = 0;
                     }
                 }
-
                 @Override
                 public void onAccuracyChanged(Sensor sensor, int i) {
 
                 }
             };
         }
-
         //Runtime permissions
         if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
